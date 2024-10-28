@@ -1,0 +1,149 @@
+/* tr{
+    background-color: aquamarine;
+}
+#jilani{
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(195, 6, 6, 0.2);
+    background-color: #ffffff;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: radial-gradient(circle,#1c1c1c,#0f0f0f);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+td{
+    width:60px;
+    height:60px;
+    text-align:centre;
+    font-size:20px;
+    border:1px solid #4CAF50;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+td:hover{
+    background-color: #d4f0d4;
+}
+
+button{
+    width: 100%;
+    height:100%;
+    font-size:20px;
+    font-weight: bold;
+    background-color: #4CAF50;
+}
+
+button:hover{
+    background-color: red;
+} */
+
+
+
+/* Overall page styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2F4F4F; /* Dark blue-gray background for the webpage */
+}
+
+/* Calculator container styling */
+#jilani {
+    width: 320px;
+    padding: 20px;
+    background: #2d2d44; /* Dark purple-gray background for the calculator */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Display styling */
+input[type="text"] {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    color: #fff;
+    background: linear-gradient(145deg, #3a3a5e, #4b4b6d); /* Gradient for a 3D look */
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5),
+                inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+/* Button table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Button cell styling */
+td {
+    padding: 5px;
+}
+
+/* General button styling with 3D effect */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(145deg, #e0e0e0, #f9f9f9); /* Light gradient for 3D effect */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4),
+                -8px -8px 16px rgba(255, 255, 255, 0.8); /* Stronger shadow for more 3D depth */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Special styling for the "C" button */
+button.clear {
+    background: linear-gradient(145deg, #ff4b4b, #ff7979);
+    color: #fff;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4),
+                -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+/* Button hover effect for 3D lift */
+button:hover {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    transform: translateY(-5px); /* Lifts the button on hover */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+                -10px -10px 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Special hover effect for "C" button */
+button.clear:hover {
+    background: linear-gradient(145deg, #ff7979, #ff4b4b);
+    transform: translateY(-5px);
+}
+
+/* Button active (pressed) effect for 3D press-in */
+button:active {
+    background: linear-gradient(145deg, #d9d9d9, #c4c4c4);
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.3),
+                inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+    transform: translateY(2px); /* Presses down the button */
+}
+
+/* Active effect for "C" button */
+button.clear:active {
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.3),
+                inset -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
